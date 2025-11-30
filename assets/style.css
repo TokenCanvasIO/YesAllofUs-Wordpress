@@ -1,0 +1,333 @@
+/* DLTPays Frontend Styles */
+
+.dltpays-signup-form,
+.dltpays-dashboard {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.dltpays-signup-form h3,
+.dltpays-dashboard h3 {
+    margin-top: 0;
+    color: #1e3a5f;
+}
+
+.dltpays-field {
+    margin-bottom: 20px;
+}
+
+.dltpays-field label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #333;
+}
+
+.dltpays-field input[type="text"],
+.dltpays-field input[type="email"],
+.dltpays-field select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.2s;
+}
+
+.dltpays-field input:focus,
+.dltpays-field select:focus {
+    border-color: #1e3a5f;
+    outline: none;
+}
+
+.dltpays-field small {
+    display: block;
+    margin-top: 5px;
+    color: #666;
+    font-size: 13px;
+}
+
+.dltpays-submit {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.dltpays-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(30, 58, 95, 0.3);
+}
+
+.dltpays-message {
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+.dltpays-message.error {
+    background: #fee;
+    color: #c00;
+    border: 1px solid #fcc;
+}
+
+.dltpays-message.success {
+    background: #efe;
+    color: #060;
+    border: 1px solid #cfc;
+}
+
+.dltpays-success {
+    text-align: center;
+    padding: 30px;
+}
+
+.dltpays-success h4 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.dltpays-referral-link {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.dltpays-referral-link input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 14px;
+    background: #f9f9f9;
+}
+
+.dltpays-referral-link button {
+    padding: 12px 20px;
+    background: #1e3a5f;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.dltpays-referred-by {
+    background: #f0f7ff;
+    padding: 10px 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+/* Dashboard Styles */
+.dltpays-welcome {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.dltpays-wallet-display {
+    font-family: monospace;
+    background: #f5f5f5;
+    padding: 10px 15px;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.currency-badge {
+    background: #1e3a5f;
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.dltpays-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.stat-card {
+    background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #eee;
+}
+
+.stat-value {
+    display: block;
+    font-size: 28px;
+    font-weight: bold;
+    color: #1e3a5f;
+}
+
+.stat-label {
+    font-size: 13px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.dltpays-referral-section {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.dltpays-referral-section h4 {
+    margin-top: 0;
+}
+
+.dltpays-rate-info {
+    margin-top: 10px;
+    color: #666;
+    font-size: 14px;
+}
+
+.dltpays-recent h4,
+.dltpays-network h4 {
+    margin-bottom: 15px;
+    color: #1e3a5f;
+}
+
+.dltpays-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.dltpays-table th,
+.dltpays-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.dltpays-table th {
+    background: #f8f9fa;
+    font-weight: 600;
+    color: #333;
+}
+
+.status-paid { color: #28a745; }
+.status-pending { color: #ffc107; }
+.status-failed { color: #dc3545; }
+
+.no-activity {
+    text-align: center;
+    padding: 30px;
+    color: #666;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* Network visualization */
+.network-levels {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.level-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 15px;
+    background: #f8f9fa;
+    border-radius: 6px;
+}
+
+.level-item.level-you {
+    background: #e8f4fd;
+    border: 2px solid #1e3a5f;
+}
+
+.level-badge {
+    background: #1e3a5f;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.level-wallet {
+    font-family: monospace;
+    color: #666;
+}
+
+.level-rate {
+    margin-left: auto;
+    color: #28a745;
+    font-weight: 600;
+}
+
+/* Wallet lookup form */
+.dltpays-wallet-lookup {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.dltpays-wallet-lookup input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+}
+
+.dltpays-wallet-lookup button {
+    padding: 10px 20px;
+    background: #1e3a5f;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .dltpays-signup-form,
+    .dltpays-dashboard {
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    .dltpays-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .dltpays-referral-link {
+        flex-direction: column;
+    }
+    
+    .dltpays-table {
+        font-size: 14px;
+    }
+    
+    .dltpays-table th,
+    .dltpays-table td {
+        padding: 8px;
+    }
+}
+
+/* Fix referral link overflow */
+.dltpays-link-box input {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
